@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 exports.wineRecommendation = async (req, res) => {
     const { food } = req.body;
 
