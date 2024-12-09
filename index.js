@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(cors(
     {
-        origin: 'https://dishfindr-4d3c3b6f3b94.herokuapp.com/'    
+        origin: 'https://dishfindr-4d3c3b6f3b94.herokuapp.com'    
     }
 ));
 app.use(express.json());
