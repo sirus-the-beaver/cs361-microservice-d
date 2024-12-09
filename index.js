@@ -9,7 +9,8 @@ const app = express();
 app.use(cors(
     {
         origin: 'https://dishfindr-4d3c3b6f3b94.herokuapp.com',
-        credentials: true   
+        credentials: true,
+        allowedHeaders: ['Content-Type', 'Authorization']
     }
 ));
 app.use(express.json());
