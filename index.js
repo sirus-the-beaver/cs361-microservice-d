@@ -6,7 +6,11 @@ const authMiddleware = require('./middleware/authMiddleware');
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors(
+    {
+        origin: 'https://dishfindr-4d3c3b6f3b94.herokuapp.com/'    
+    }
+));
 app.use(express.json());
 
 app.use(authMiddleware);
